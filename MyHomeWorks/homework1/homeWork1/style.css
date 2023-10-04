@@ -1,22 +1,26 @@
 body {
     background-color: rgba(240, 248, 255, 0.863);
+    padding: 30px 21px 21px 20px;
 }
 h1 {
     margin-bottom: 18px;
 }
 div {
-    background-color: #34495E 
-    border-radius: 20px 
-    padding: 21px 
-}
-.text-1 {
-    background-color: rgb(255, 240, 247);
+    background-color: #34495E; 
+    border: 1px solid;
+    border-radius: 20px;  
+    padding: 21px;
+    margin-bottom: 50px;
+    
+
+} .text-1 {
+    background-color: rgb(240, 255, 243);
 }
 
 .text-2 {
-    background-color: #345e55;
+    background-color: #30cc98;
 }
 .text-3 {
-    background-color: #34355e;
-}
+    background-color: #1a804d;
+} 
 
