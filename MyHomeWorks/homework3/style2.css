@@ -37,21 +37,24 @@ body {
 }
 
 .main .form-container form input {
-    border: 1px solid #cfd8dc;
+    border: 1px solid #FFE44D;
     padding: 14px 0 16px 14px;
     border-radius: 12px;
 }
 
-input[type="text"][placeholder="Логин"]:focus {
-    border-radius: 12px;
-    border: 10px solid violet;
+input[type="text"][placeholder="Логин"]:focus ,
+input[type="password"][class="password-input"][placeholder="Пароль"]:focus{
+    color: #1A1A1A; 
+    outline: none;
+    border: 1px solid rgb(171, 28, 171); 
 }
 
 .main .form-container form .password-input {
     margin-bottom: 24px;
     margin-top: 8px;
+    border: 1px solid #7B8E98;;
 }
- 
+
 .main .form-container {
     position: relative;
 }
@@ -76,6 +79,13 @@ p {
     border-radius: 55px;
     border: #cfd8dc;
 }
+.main .form-container form .registration:focus,
+.main .form-container form .enter:focus,
+.close-button button:focus  {
+    color: #1A1A1A; 
+    outline: none;
+    border: 1px solid rgb(171, 28, 171); 
+}
 
 .main .form-container form .enter {
     border-color: #CFD8DC;
@@ -93,5 +103,8 @@ p {
     height: 24px;
     border: none;
     background-color: white;
-    text-align: center; 
+    text-align: center;
+    
 }
+
+/* cursor: #ffAA0D; */
