@@ -39,8 +39,6 @@ div {
 }
 
 .green:hover {
-    /* width: 300px;
-    height: 300px; */
     transform:scale(1.5) rotate(-45deg);
 
 }
