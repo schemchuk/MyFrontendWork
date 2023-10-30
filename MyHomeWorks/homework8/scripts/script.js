@@ -62,3 +62,14 @@ const persons = [
 
 ]
 
+const usersContainer = document.querySelector(".users_container")
+for (let i = 0; i < persons.length; i++) {
+    if(persons[i].age >= 18) {
+        usersContainer.insertAdjacentHTML("beforeend", `<div class="users_container">
+                                                            <p>${persons[i].firstNane}</p>
+                                                            <p>${persons[i].lastName}</p>
+                                                            <p>${persons[i].age}</p>
+                                                        </div>`)
+    }
+}
+
