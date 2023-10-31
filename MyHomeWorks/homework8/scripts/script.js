@@ -31,45 +31,42 @@ for (let i = 0; i < names.length; i++) {
 
 const persons = [
     {
-        firstNane: "Vasja",
+        firstName: "Vasja",
         lastName: "Vasinsky",
         age: 17
     },
-
     {
-        firstNane: "Petr",
+        firstName: "Petr",
         lastName: "Petrov",
         age: 25
     },
-
     {
-        firstNane: "Marija",
+        firstName: "Marija",
         lastName: "Marynsky",
         age: 13
     },
-
     {
-        firstNane: "Sonja",
+        firstName: "Sonja",
         lastName: "Sonyvsky",
         age: 21
     },
-
     {
-        firstNane: "Anton",
+        firstName: "Anton",
         lastName: "Lubyshenko",
         age: 49
     }
+];
 
-]
+const usersContainer = document.querySelector(".users_container");
 
-const usersContainer = document.querySelector(".users_container")
 for (let i = 0; i < persons.length; i++) {
-    if(persons[i].age >= 18) {
-        usersContainer.insertAdjacentHTML("beforeend", `<div class="users_container">
-                                                            <p>${persons[i].firstNane}</p>
-                                                            <p>${persons[i].lastName}</p>
-                                                            <p>${persons[i].age}</p>
-                                                        </div>`)
+    if (persons[i].age >= 18) {
+        usersContainer.insertAdjacentHTML("beforeend", `<div class="user_card">
+            <h5>${persons[i].firstName}</h5>
+            <p>${persons[i].lastName}</p>
+            <p>${persons[i].age}</p>
+        </div>`);
     }
 }
+
 
